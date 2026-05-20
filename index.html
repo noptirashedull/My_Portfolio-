@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ナップティ エムデイ ラセドゥル — ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+Bengali:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor">
+  <div class="cursor-ring" id="cRing"></div>
+  <div class="cursor-dot"  id="cDot"></div>
+</div>
+
+<nav id="nav">
+  <a href="#hero" class="nav-logo">N<span>.</span>RASEDUL</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"      data-i18n="nav.about">私について</a></li>
+    <li><a href="#skills"     data-i18n="nav.skills">スキル</a></li>
+    <li><a href="#projects"   data-i18n="nav.projects">プロジェクト</a></li>
+    <li><a href="#education"  data-i18n="nav.education">学歴・資格</a></li>
+    <li><a href="#experience" data-i18n="nav.experience">職歴</a></li>
+    <li><a href="#cv"         data-i18n="nav.cv">履歴書</a></li>
+    <li><a href="#contact"    data-i18n="nav.contact">お問い合わせ</a></li>
+  </ul>
+  <div class="lang-sw">
+    <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+    <button class="lang-btn"        onclick="setLang('en')">EN</button>
+    <button class="lang-btn"        onclick="setLang('bn')">বাংলা</button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-kanji">技</div>
+  <div class="hero-left">
+    <div class="hero-tag" data-i18n="hero.tag">IT学生 &amp; デベロッパー</div>
+    <h1 class="hero-name">Napti<br><em>Md Rasedul</em></h1>
+    <div class="hero-sub">ナップティ　エムデイ　ラセドゥル</div>
+    <div class="hero-div"></div>
+    <p class="hero-desc" data-i18n="hero.desc">
+      フォーラム情報アカデミー専門学校<br>
+      情報ソフトウェア科　グローバルITコース　在学中<br><br>
+      Webアプリケーション開発を中心に、<br>多言語対応・チーム開発経験あり。
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-pri" data-i18n="hero.btn1">お問い合わせ →</a>
+      <a href="#cv"      class="btn-out" data-i18n="hero.btn2">履歴書を見る</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="photo-wrap">
+      <div class="photo-frame"></div>
+      <div class="photo-bg"></div>
+      <div class="photo-inner">
+        <img src="portfolio_photo.png" alt="Napti Md Rasedul"/>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="about">
+  <div class="sec-hd reveal">
+    <span class="sec-n">01</span>
+    <h2 class="sec-t" data-i18n="about.title">私について</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">ABOUT</span>
+  </div>
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="info-list">
+        <div class="info-row"><span class="i-key" data-i18n="about.k1">氏名</span><span class="i-val">ナップティ エムデイ ラセドゥル<small>NAPTI MD RASEDUL</small></span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k2">年齢</span><span class="i-val" data-i18n="about.age">25歳</span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k3">性別</span><span class="i-val" data-i18n="about.gender">男性</span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k4">所在地</span><span class="i-val" style="font-size:.78rem">新潟県新潟市中央区上大川前通4番町44番地15 103号</span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k5">学校</span><span class="i-val">フォーラム情報アカデミー専門学校<small data-i18n="about.course">情報ソフトウェア科　グローバルITコース</small></span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k6">卒業予定</span><span class="i-val">2027年3月</span></div>
+        <div class="info-row"><span class="i-key">E-mail</span><span class="i-val" style="font-family:var(--mono);font-size:.72rem">noptirashedull@gmail.com</span></div>
+        <div class="info-row"><span class="i-key" data-i18n="about.k7">電話</span><span class="i-val" style="font-family:var(--mono)">080-4474-1296</span></div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-k" data-i18n="about.langkey">対応言語</div>
+        <span class="lang-chip" data-i18n="about.l1">ベンガル語（母語）</span>
+        <span class="lang-chip" data-i18n="about.l2">日本語（N3）</span>
+        <span class="lang-chip" data-i18n="about.l3">英語</span>
+        <span class="lang-chip" data-i18n="about.l4">ウルドゥー語</span>
+        <span class="lang-chip" data-i18n="about.l5">ヒンディー語</span>
+      </div>
+    </div>
+    <div class="about-body reveal">
+      <p data-i18n="about.p1">私はフォーラム情報アカデミー専門学校にて、HTML・CSS・JavaScript（React.js・Node.js）・Python・データベース（SQL）・AI・機械学習などを学び、Webアプリケーション開発の基礎を習得しました。</p>
+      <p data-i18n="about.p2">学校のプロジェクトでは、チームでのシステム開発を経験し、役割分担や進捗管理を意識しながら開発に取り組んできました。この経験を通じて、実務の現場で自身のスキルを活かし、さらに成長したいと考えるようになりました。</p>
+      <div class="about-quote">
+        <p data-i18n="about.quote">課題に直面した際に自ら調べて解決へと導く「自己解決力」と、最後まで粘り強く取り組む「継続力」が私の強みです。</p>
+      </div>
+      <p data-i18n="about.p3">通訳アルバイトの経験を通じて、日本語での円滑なコミュニケーション力と、相手の立場を考えたサポート力を身につけました。加えて、母国語に加え、英語・ウルドゥー語・ヒンディー語でのコミュニケーションも可能です。</p>
+      <p data-i18n="about.p4">フロントエンド・バックエンドの両方に挑戦しながらスキルを磨き、フルスタック開発エンジニアとして日本の開発現場に貢献していきたいと考えています。</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sec-hd reveal">
+    <span class="sec-n">02</span>
+    <h2 class="sec-t" data-i18n="skills.title">スキル</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">SKILLS</span>
+  </div>
+  <div class="skills-grid">
+    <div class="sk-card reveal"><div class="sk-kanji">表</div><div class="sk-cat">FRONTEND</div><h3 data-i18n="sk1.name">フロントエンド開発</h3><div class="sk-tags"><span class="sk-tag">HTML5</span><span class="sk-tag">CSS3</span><span class="sk-tag">JavaScript</span><span class="sk-tag">React.js</span><span class="sk-tag">Node.js</span></div></div>
+    <div class="sk-card reveal"><div class="sk-kanji">裏</div><div class="sk-cat">BACKEND</div><h3 data-i18n="sk2.name">バックエンド開発</h3><div class="sk-tags"><span class="sk-tag">Python</span><span class="sk-tag">Node.js</span><span class="sk-tag">REST API</span></div></div>
+    <div class="sk-card reveal"><div class="sk-kanji">数</div><div class="sk-cat">DATABASE</div><h3 data-i18n="sk3.name">データベース管理</h3><div class="sk-tags"><span class="sk-tag">SQL</span><span class="sk-tag">MySQL</span><span class="sk-tag">DB設計</span></div></div>
+    <div class="sk-card reveal"><div class="sk-kanji">知</div><div class="sk-cat">AI / ML</div><h3 data-i18n="sk4.name">AI・機械学習</h3><div class="sk-tags"><span class="sk-tag">Python (ML)</span><span class="sk-tag">AIの基礎</span><span class="sk-tag">データ処理</span></div></div>
+    <div class="sk-card reveal"><div class="sk-kanji">語</div><div class="sk-cat">LANGUAGES</div><h3 data-i18n="sk5.name">多言語コミュニケーション</h3><div class="sk-tags"><span class="sk-tag">日本語 N3</span><span class="sk-tag">英語</span><span class="sk-tag">ベンガル語</span><span class="sk-tag">ウルドゥー語</span><span class="sk-tag">ヒンディー語</span></div></div>
+    <div class="sk-card reveal"><div class="sk-kanji">組</div><div class="sk-cat">SOFT SKILLS</div><h3 data-i18n="sk6.name">チームワーク・成長力</h3><div class="sk-tags"><span class="sk-tag" data-i18n="sk6.t1">チーム開発</span><span class="sk-tag" data-i18n="sk6.t2">問題解決力</span><span class="sk-tag" data-i18n="sk6.t3">自己学習力</span><span class="sk-tag" data-i18n="sk6.t4">通訳スキル</span></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="sec-hd reveal">
+    <span class="sec-n">03</span>
+    <h2 class="sec-t" data-i18n="proj.title">プロジェクト</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">PROJECTS</span>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card reveal">
+      <div class="proj-num">01</div>
+      <div class="proj-tag" data-i18n="proj1.tag">学校プロジェクト · チーム開発</div>
+      <h3 data-i18n="proj1.title">Eコマース Webサイト</h3>
+      <p class="proj-desc" data-i18n="proj1.desc">フォーラム情報アカデミー専門学校の授業プロジェクトとして、チームで開発したEコマースサイトです。商品一覧・カート機能・購入フローを実装し、フロントエンドからバックエンドまで一貫して担当しました。役割分担・進捗管理を通じて、実践的なチーム開発スキルを習得しました。</p>
+      <div class="proj-techs">
+        <span class="proj-tech">HTML5</span><span class="proj-tech">CSS3</span><span class="proj-tech">JavaScript</span><span class="proj-tech">React.js</span><span class="proj-tech">Node.js</span><span class="proj-tech">SQL</span>
+      </div>
+      <span class="proj-link" data-i18n="proj.viewmore">詳細を見る →</span>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="sec-hd reveal">
+    <span class="sec-n">04</span>
+    <h2 class="sec-t" data-i18n="edu.title">学歴・資格</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">EDUCATION</span>
+  </div>
+  <div class="edu-grid">
+    <div class="reveal">
+      <div class="sub-h" data-i18n="edu.sub1">学 歴</div>
+      <div class="tl">
+        <div class="tl-item"><div class="tl-y">2027.03</div><div class="tl-dot"></div><div><div class="tl-org">フォーラム情報アカデミー専門学校</div><div class="tl-sub" data-i18n="edu.course">情報ソフトウェア科　グローバルITコース</div><span class="tl-badge" data-i18n="edu.expected">卒業見込み</span></div></div>
+        <div class="tl-item"><div class="tl-y">2025.04</div><div class="tl-dot"></div><div><div class="tl-org">フォーラム情報アカデミー専門学校</div><div class="tl-sub" data-i18n="edu.enrolled">情報ソフトウェア科　グローバルITコース　入学</div></div></div>
+        <div class="tl-item"><div class="tl-y">2023–2025</div><div class="tl-dot"></div><div><div class="tl-org">国際外語・観光・エアライン専門学校</div><div class="tl-sub" data-i18n="edu.japanese">日本語科　2025年3月卒業</div></div></div>
+        <div class="tl-item"><div class="tl-y">2018–2021</div><div class="tl-dot"></div><div><div class="tl-org">Quaderia Taiyabiya Alia Madrasah</div><div class="tl-sub" data-i18n="edu.madrasah">2021年1月卒業</div></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="sub-h" data-i18n="edu.sub2">資 格</div>
+      <div class="cert-list">
+        <div class="cert-card now"><div class="cert-lv red">N2</div><div><div class="cert-name">日本語能力試験 JLPT N2</div><div class="cert-yr" data-i18n="cert.n2yr">取得予定：2026年7月</div></div><span class="cert-badge plan" data-i18n="cert.plan">目標</span></div>
+        <div class="cert-card"><div class="cert-lv">N3</div><div><div class="cert-name">日本語能力試験 JLPT N3</div><div class="cert-yr">2025年7月取得</div></div><span class="cert-badge done" data-i18n="cert.done">取得済み</span></div>
+        <div class="cert-card"><div class="cert-lv">N4</div><div><div class="cert-name">日本語能力試験 JLPT N4</div><div class="cert-yr">2024年7月取得</div></div><span class="cert-badge done" data-i18n="cert.done2">取得済み</span></div>
+        <div class="cert-card"><div class="cert-lv">N5</div><div><div class="cert-name">日本語能力試験 NAT N5</div><div class="cert-yr">2023年2月取得</div></div><span class="cert-badge done" data-i18n="cert.done3">取得済み</span></div>
+      </div>
+      <div class="jbar">
+        <div class="jbar-lbl">JLPT PROGRESS — N5 → N2</div>
+        <div class="jbar-tr"><div class="jbar-s"></div><div class="jbar-s"></div><div class="jbar-s"></div><div class="jbar-s p"></div></div>
+        <div class="jbar-lb"><span>N5 ✓</span><span>N4 ✓</span><span>N3 ✓</span><span class="r">N2 →</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sec-hd reveal">
+    <span class="sec-n">05</span>
+    <h2 class="sec-t" data-i18n="exp.title">職歴</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">EXPERIENCE</span>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-card reveal">
+      <div class="exp-period">2025.12 — <span data-i18n="exp.present">現在</span></div>
+      <div class="exp-co">グローバルネクスト事業協同組合</div>
+      <div class="exp-role" data-i18n="exp1.role">通訳者</div>
+      <div class="exp-desc" data-i18n="exp1.desc">日本語とベンガル語を中心とした通訳業務に従事。ビジネスの場における円滑なコミュニケーション支援を担当し、多言語対応力を活かして業務に貢献している。</div>
+    </div>
+  </div>
+</section>
+
+<section id="cv">
+  <div class="sec-hd reveal">
+    <span class="sec-n">06</span>
+    <h2 class="sec-t" data-i18n="cv.title">履歴書・職務経歴書</h2>
+    <div class="sec-l"></div>
+    <span class="sec-sub">RESUME / CV</span>
+  </div>
+  <div class="cv-wrap">
+    <div class="reveal">
+      <p class="cv-intro" data-i18n="cv.heading">採用をご検討の方へ<span class="r">。</span><br>書類はこちらから。</p>
+      <p class="cv-note" data-i18n="cv.note">履歴書・職務経歴書はPDFにてご用意しております。ダウンロードリンクより直接ご覧いただくか、メールにてお送りすることも可能です。ご不明な点はお気軽にお問い合わせください。</p>
+      <div class="cv-info" data-i18n="cv.info">📧 メール送付ご希望の方：<br><a href="mailto:noptirashedull@gmail.com">noptirashedull@gmail.com</a> までご連絡いただくか、右の「書類請求フォーム」をご利用ください。</div>
+    </div>
+    <div class="reveal">
+      <div class="cv-cards">
+        <a href="https://drive.google.com/file/d/1z79UbunknXRVs3t4gjBlJLZww63NO5Ey/view?usp=drive_link" target="_blank" class="cv-card">
+          <div class="cv-icon">🇯🇵</div>
+          <div><div class="cv-t" data-i18n="cv.jp">履歴書（日本語版）</div><div class="cv-s">PDF · Google Drive から開く</div></div>
+          <div class="cv-arr">→</div>
+        </a>
+        <div class="cv-card" id="reqBtn">
+          <div class="cv-icon">📨</div>
+          <div><div class="cv-t" data-i18n="cv.req">書類をメールで請求する</div><div class="cv-s" data-i18n="cv.reqsub">フォームに記入 → メール送信</div></div>
+          <div class="cv-arr">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sec-hd reveal">
+    <span class="sec-n">07</span>
+    <h2 class="sec-t" data-i18n="contact.title">お問い合わせ</h2>
+    <div class="sec-l" style="background:rgba(244,239,232,.12)"></div>
+    <span class="sec-sub" style="color:rgba(244,239,232,.25)">CONTACT</span>
+  </div>
+  <div class="ct-grid">
+    <div class="reveal">
+      <div class="ct-links">
+        <a href="mailto:noptirashedull@gmail.com" class="ct-link"><div><div class="ct-lk" data-i18n="ct.email">メールアドレス</div><div class="ct-lv">noptirashedull@gmail.com</div></div><span class="ct-arr">→</span></a>
+        <a href="tel:08044741296" class="ct-link"><div><div class="ct-lk" data-i18n="ct.phone">電話番号</div><div class="ct-lv">080-4474-1296</div></div><span class="ct-arr">→</span></a>
+        <a href="https://github.com/noptirashedull" target="_blank" class="ct-link"><div><div class="ct-lk">GitHub</div><div class="ct-lv">github.com/noptirashedull</div></div><span class="ct-arr">→</span></a>
+        <a href="https://www.linkedin.com/in/mohammad-rasedul-napti-a3483440a/" target="_blank" class="ct-link"><div><div class="ct-lk">LinkedIn</div><div class="ct-lv">linkedin.com/in/mohammad-rasedul-napti</div></div><span class="ct-arr">→</span></a>
+        <div class="ct-link" style="cursor:default"><div><div class="ct-lk" data-i18n="ct.loc">所在地</div><div class="ct-lv" style="font-size:.76rem">新潟県新潟市中央区上大川前通4番町44番地15 103号</div></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div style="font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:rgba(244,239,232,.35);margin-bottom:1.4rem;padding-bottom:.7rem;border-bottom:1px solid rgba(244,239,232,.1)" data-i18n="ct.str">強み・アピールポイント</div>
+      <div class="str-list">
+        <div class="str-item"><span class="str-k">解</span><div><div class="str-t" data-i18n="str1.t">自己解決力</div><div class="str-d" data-i18n="str1.d">課題に直面した際に自ら調べ、解決へと導く力。</div></div></div>
+        <div class="str-item"><span class="str-k">継</span><div><div class="str-t" data-i18n="str2.t">継続力</div><div class="str-d" data-i18n="str2.d">最後まで粘り強く取り組み、目標を達成する力。</div></div></div>
+        <div class="str-item"><span class="str-k">協</span><div><div class="str-t" data-i18n="str3.t">チーム協調性</div><div class="str-d" data-i18n="str3.d">周囲と積極的に連携し、責任を持って役割を果たす力。</div></div></div>
+        <div class="str-item"><span class="str-k">語</span><div><div class="str-t" data-i18n="str4.t">多言語コミュニケーション</div><div class="str-d" data-i18n="str4.d">日本語・英語・ベンガル語・ウルドゥー語・ヒンディー語に対応。</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="ft-n">NAPTI MD RASEDUL &nbsp;/&nbsp; ナップティ エムデイ ラセドゥル</span>
+  <span class="ft-c">© 2026 · NIIGATA, JAPAN</span>
+</footer>
+
+<div class="modal-ov" id="modalOv">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">× <span data-i18n="modal.close">閉じる</span></button>
+    <h3 data-i18n="modal.title">書類請求フォーム</h3>
+    <p  data-i18n="modal.desc">以下にご記入いただきますと、メールにて履歴書・職務経歴書をお送りします。お気軽にご連絡ください。</p>
+    <div class="modal-form">
+      <input    type="text"  id="mName"  data-i18n-ph="modal.ph1" placeholder="お名前 / お会社名"/>
+      <input    type="email" id="mEmail" data-i18n-ph="modal.ph2" placeholder="メールアドレス"/>
+      <textarea              id="mMsg"   data-i18n-ph="modal.ph3" rows="3" placeholder="ご用件・ご質問など（任意）"></textarea>
+      <button class="modal-submit" onclick="sendReq()" data-i18n="modal.send">送信する →</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
