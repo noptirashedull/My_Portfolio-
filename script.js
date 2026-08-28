@@ -73,7 +73,7 @@ const T = {
     "edu.japanese": "日本語科　2025年3月卒業",
     "edu.madrasah": "2021年1月卒業",
     "edu.sub2":     "資 格",
-    "cert.n2yr":    "取得予定：2026年7月",
+    "cert.n2yr":    "取得予定：2026年12月",
     "cert.plan":    "目標",
     "cert.done":    "取得済み",
     "cert.done2":   "取得済み",
